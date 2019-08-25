@@ -6,6 +6,8 @@ let accountHolder = "Balloonicorn";
 const accountNumber = "123456";
 let businessName = "Balloonicorn's Cupcake Shop";
 
+let startingBalance = 26000;
+
 const addresses = ["123 Main Street", "683 Sutter Street", "1600 Pennsylvania Ave"];
 
 const phoneNumbers = new Map();
@@ -94,7 +96,7 @@ function showTransactions(mapOfTransactions, startBalance) {
     let type = " ";
     for(const[date, amount] of mapOfTransactions) {
         //let type = "";
-        startBalance += amount
+        startBalance += amount;
         if(amount < 0){
             type = 'withdrawal'
         } else {
@@ -110,12 +112,24 @@ showTransactions(transactions, 26000)
 // All Customer Info:
 
 // Make an object with customer info
-
+const customerInfoOne = {
+    'Account Holder': accountHolder,
+    'Account Number': accountNumber,
+    'Business Name': businessName,
+    'Addresses': addresses,
+    'Phone Numbers': phoneNumbers,
+    'Transactions': transactions,
+    'Starting Balance': startingBalance
+}
 
 // Function to add customer attributes
-
+function addMelonsAndPets(customer, favoriteMelon='Canteloupe', numPets=0){
+    customer['Favorite Melon'] = favoriteMelon;
+    customer['Number of Pets'] = numPets;
+}
 
 // Add attributes for this user
+addMelonsAndPets(customerInfoOne, "Casaba", 2)
 
 
 // ///////////////////////////////////////////////////////
