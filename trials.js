@@ -15,14 +15,28 @@ phoneNumbers.set('home', '510-867-5309')
 phoneNumbers.set('mobile', '415-555-1212')
 phoneNumbers.set('business', '415-123-4567')
 
+
+
 // ///////////////////////////////////////////////////////
 // Create User Info Display:
 
 // Add function to print account information 
+function accountInfo(acctName, acctNumber, busName) {
+    console.log('Account Holder Name: ' +acctName+ '\n' +
+                'Account Holder Number: ' +acctNumber+ '\n' +
+                'Business Name: ' +busName+ '\n')
+}
 
+accountInfo(accountHolder, accountNumber, businessName)
 
 // Add function to print all addresses, including a header
-
+function printAddresses(addressList) {
+    console.log('Addresses: ' +'\n')
+    for(const address of addressList) {
+        console.log(address +'\n')
+    }
+}
+printAddresses(addresses)
 
 // Add function to print phone types and numbers
 
