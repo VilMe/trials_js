@@ -39,7 +39,14 @@ function printAddresses(addressList) {
 printAddresses(addresses)
 
 // Add function to print phone types and numbers
+function showPhoneNums(phoneNumsMap){
+    console.log('Phone Numbers: ' + '\n')
+    for(const [type, num] of phoneNumsMap){
+        console.log(type+ ': ' +num+ '\n')
+    }
+}
 
+showPhoneNums(phoneNumbers)
 
 // ///////////////////////////////////////////////////////
 // Transactions:
