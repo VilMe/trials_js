@@ -142,9 +142,12 @@ function isPerferred(customer){
         return false
     }
 }
+console.log(isPerferred(customerInfoOne))
 
 function loanCalculator(annualIncome, customerInfo) {
+    if(isPerferred(customerInfo){
 
+    }
 }
 
 // Function to return loan rate
