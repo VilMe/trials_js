@@ -146,7 +146,12 @@ console.log(isPerferred(customerInfoOne))
 
 function loanCalculator(annualIncome, customerInfo) {
     if(isPerferred(customerInfo){
-
+        if(annualIncome < 100000){
+            return 0.07
+        } else if (annualIncome >= 100000 || annualIncome <= 200000){
+            return 0.04
+    } else {
+        if
     }
 }
 
