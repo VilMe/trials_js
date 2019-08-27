@@ -134,10 +134,17 @@ addMelonsAndPets(customerInfoOne, "Casaba", 2)
 
 // ///////////////////////////////////////////////////////
 // Getting a Business Loan
+function isPerferred(customer){
+    if(customer['Favorite Melon'] === 'Casaba' || 
+        customer['Number of Pets'] > 5){
+            return true
+    } else {
+        return false
+    }
+}
+
 function loanCalculator(annualIncome, customerInfo) {
-    isPreferred(customerInfo['Favorite Melon'] === 'Casaba' || 
-        customerInfo['Number of Pets'] > 5 ;
-        // left off here needs to get ready to go    
+
 }
 
 // Function to return loan rate
