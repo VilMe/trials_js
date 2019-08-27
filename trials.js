@@ -145,15 +145,23 @@ function isPerferred(customer){
 console.log(isPerferred(customerInfoOne))
 
 function loanCalculator(annualIncome, customerInfo) {
-    if(isPerferred(customerInfo){
+    if(isPerferred(customerInfo)) {
         if(annualIncome < 100000){
             return 0.07
         } else if (annualIncome >= 100000 || annualIncome <= 200000){
             return 0.04
     } else {
-        if
+        if(annualIncome < 100000){
+            return 0.08
+        } else if (annualIncome >= 100000 || annualIncome <= 200000){
+            return 0.07
+        } else {
+            return 0.04
+        }
     }
 }
+}
+console.log(loanCalculator(2000, customerInfoOne));
 
 // Function to return loan rate
 
