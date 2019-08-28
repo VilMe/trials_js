@@ -161,7 +161,7 @@ function loanCalculator(annualIncome, customerInfo) {
     }
 }
 }
-console.log(loanCalculator(2000, customerInfoOne));
+console.log(loanCalculator(12000, customerInfoOne));
 
 // Function to return loan rate
 
@@ -171,8 +171,9 @@ console.log(loanCalculator(2000, customerInfoOne));
 
 
 // Add function to show bank customer report
-
-
+function customerReport(customer, balance) {
+    
+}
 
 // ///////////////////////////////////////////////////////
 // PART 2:
