@@ -106,7 +106,7 @@ function showTransactions(mapOfTransactions, startBalance) {
     }
 }
 
-showTransactions(transactions, 26000)
+showTransactions(transactions, startingBalance)
 
 // ///////////////////////////////////////////////////////
 // All Customer Info:
