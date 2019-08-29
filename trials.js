@@ -78,7 +78,7 @@ function showBalanceStatus (mapOfTransactions, balance) {
     for(const amount of amounts){
         balance += amount
     }
-    console.log('Balance: ' +balance)
+    console.log('Ending Balance: ' +balance)
     if(balance < 0) {
         console.log('YOU ARE OVERDRAWN')
     } else if(balance < 20) {
@@ -179,6 +179,9 @@ function customerReport(customer, balance, transactions) {
     console.log("Home Phone Number: " + customer["Phone Numbers"][0]);
     console.log("Starting Balance: " + balance)
     showBalanceStatus(transactions, balance)
+    if(isPerferred(customer)) {
+        console.log("Congratulations on being a preferred customer!")
+    }
 }
 
 customerReport(customerInfoOne, startingBalance, transactions)
