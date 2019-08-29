@@ -172,8 +172,11 @@ console.log(loanCalculator(12000, customerInfoOne));
 
 // Add function to show bank customer report
 function customerReport(customer, balance) {
+
     console.log("Account information")
     console.log("Name: " + customer["Account Holder"])
+    console.log("Business Name: " + customer["Business Name"])
+    console.log("Addresses: " + customer["Addresses"])
 }
 
 customerReport(customerInfoOne, startingBalance)
