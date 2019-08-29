@@ -73,9 +73,8 @@ addTransactions ('May-29', +2200)
 
 // Add function to show balance status
 
-function showBalanceStatus (mapOfTransactions) {
+function showBalanceStatus (mapOfTransactions, balance) {
     const amounts = mapOfTransactions.values();
-    let balance = 0;
     for(const amount of amounts){
         balance += amount
     }
@@ -171,15 +170,18 @@ console.log(loanCalculator(12000, customerInfoOne));
 
 
 // Add function to show bank customer report
-function customerReport(customer, balance) {
+function customerReport(customer, balance, transactions) {
 
-    console.log("Account information")
-    console.log("Name: " + customer["Account Holder"])
-    console.log("Business Name: " + customer["Business Name"])
-    console.log("Addresses: " + customer["Addresses"])
+    console.log("Account information");
+    console.log("Name: " + customer["Account Holder"]);
+    console.log("Business Name: " + customer["Business Name"]);
+    console.log("Address: " + customer["Addresses"][0]);
+    console.log("Home Phone Number: " + customer["Phone Numbers"][0]);
+    console.log("Starting Balance: " + balance)
+    showBalanceStatus(transactions, balance)
 }
 
-customerReport(customerInfoOne, startingBalance)
+customerReport(customerInfoOne, startingBalance, transactions)
 // ///////////////////////////////////////////////////////
 // PART 2:
 // Bank Manager
